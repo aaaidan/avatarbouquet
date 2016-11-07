@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Bouquet for my Avatar</title>
+<style>
+body {
+  font-family: monospace;
+  font-size: 18px;
+}
+.blink {
+  visibility: hidden;
+}
+.blink-on {
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+A BOUQUET FOR MY AVATAR<span class="blink">_</span>
+<script>
+setInterval(function() {
+  document.querySelector(".blink").classList.toggle('blink-on');
+}, 500);
+</script>
+</body>
+</html>
